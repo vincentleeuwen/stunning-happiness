@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { Image, View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
 import AsyncIcon from './AsyncIcon';
 import { CareService } from './types';
@@ -16,7 +16,7 @@ const ListItem = ({ id, intro: { de: introDe }, title: { de: titleDe } }: CareSe
           <AsyncIcon id={id} height={50} width={50} />
           <Text style={styles.title}>{titleDe}</Text>
         </View>
-        <Text onPress={toggle}>{open ? 'Close' : 'Open'}</Text>
+        <TouchableOpacity onPress={toggle}>{open ? <Image source={require('../assets/images/down.png')} /> : <Image source={require('../assets/images/right.png')} />}</TouchableOpacity>
       </View>
       {
         open && <View style={styles.intro}>
