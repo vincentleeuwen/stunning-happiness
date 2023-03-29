@@ -1,3 +1,7 @@
+
+# Notes
+1. I used icon pngs for time sake. Normally I would use an icon library but setting this all up for just the two cares seemed overkill.
+
 # Frontent Dev Coding Challenge
 Please refer to this [google doc](https://docs.google.com/document/d/1-DvZxwjlVMntxLZW9t4_4kvrFJkWD-n_bpoh2-3ZOVM/edit) for instructions and expected deliverables.
 
