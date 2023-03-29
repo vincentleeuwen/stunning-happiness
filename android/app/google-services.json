@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "616494959095",
+    "firebase_url": "https://nui-testchallenge-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "nui-testchallenge",
+    "storage_bucket": "nui-testchallenge.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616494959095:android:d5ba27619f8c2a84e806f2",
+        "android_client_info": {
+          "package_name": "care.nui.interview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616494959095-42e8v5hsgme1mqr5dpiho60g3917vs7l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuvCIPwf_mJX1FBfTpmX_FB35CIMYYrwo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616494959095-42e8v5hsgme1mqr5dpiho60g3917vs7l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "616494959095-3h5e8l6bqch6c6pp8jo799ufslobblfi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "care.nui.interview"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
