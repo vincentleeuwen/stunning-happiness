@@ -11,13 +11,15 @@ const ListItem = ({ id, intro: { de: introDe }, title: { de: titleDe } }: CareSe
 
   return (
     <View style={styles.wrapper}>
-      <View style={styles.controls}>
-        <View style={styles.inner}>
-          <AsyncIcon id={id} height={50} width={50} />
-          <Text style={styles.title}>{titleDe}</Text>
-        </View>
-        <TouchableOpacity onPress={toggle}>{open ? <Image source={require('../assets/images/down.png')} /> : <Image source={require('../assets/images/right.png')} />}</TouchableOpacity>
-      </View>
+      <TouchableOpacity style={styles.controls} onPress={toggle}>
+        <>
+          <View style={styles.inner}>
+            <AsyncIcon id={id} height={50} width={50} />
+            <Text style={styles.title}>{titleDe}</Text>
+          </View>
+          {open ? <Image source={require('../assets/images/down.png')} /> : <Image source={require('../assets/images/right.png')} />}
+        </>
+      </TouchableOpacity>
       {
         open && <View style={styles.intro}>
           <Text>{introDe}</Text>
