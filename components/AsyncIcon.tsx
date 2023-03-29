@@ -17,14 +17,11 @@ const AsyncIcon = ({ id, height, width }: Props) => {
     const getImage = async () => {
       const assetPath = `assets/${id}.png`;
       const url = await storage().ref(assetPath).getDownloadURL();
-      console.log(url);
       setImg(url);
       setLoading(false);
     }
-    getImage();
+    void getImage();
   }, [id])
-
-  
 
   return (
     <>
