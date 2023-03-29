@@ -2,17 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { ActivityIndicator, FlatList, View, Text  } from 'react-native';
 import database from '@react-native-firebase/database';
 
-interface Translations {
-  de: string;
-  en: string; 
-}
+import ListItem from './ListItem';
 
-interface CareService {
-  id: string;
-  intro: Translations;
-  level: number;
-  title: Translations;
-}
+import { CareService } from './types';
 
 const List = () => {
   const [loading, setLoading] = useState(true);
@@ -35,9 +27,7 @@ const List = () => {
     <FlatList
       data={services}
       renderItem={({ item }) => (
-        <View style={{ height: 50, flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <Text>{item.title.de}</Text>
-        </View>
+        <ListItem {...item} />
       )}
     />
   )
